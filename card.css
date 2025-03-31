@@ -1,0 +1,75 @@
+/* Define CSS Variables */
+:root {
+    --main-color: #3b3c41;
+    --secondary-color: #52575f;
+    --highlight-color: #014A93;
+    --bg-color: white;
+    --shadow: 0px 0px 20px white;
+    --font-size-large: 18px;
+    --font-size-medium: 16px;
+    --font-size-small: 15px;
+}
+
+/* Common Classes */
+.center-content {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.full-width {
+    width: 100%;
+}
+
+/* Styles */
+body .bottom_bar {
+    z-index: 1;
+}
+
+.back_img {
+    width: 17px;
+    @apply .center-content;
+}
+
+.action_grid {
+    cursor: pointer;
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: max-content max-content;
+}
+
+.title_text {
+    font-size: var(--font-size-large);
+    color: var(--main-color);
+    text-align: center;
+    @apply .full-width;
+    font-weight: bold;
+    @apply .center-content;
+    height: max-content;
+}
+
+/* More styles ... */
+
+/* Fix syntax error */
+.eagle_text {
+    position: absolute;
+    top: 68.1%;
+    left: 18%;
+    width: 20%;
+    z-index: 1;
+}
+
+/* More styles ... */
+
+/* Simplified grid layout */
+.bottom_grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    height: 100%;
+    width: max-content;
+    @apply .center-content;
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+/* More styles ... */
