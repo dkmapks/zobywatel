@@ -1,0 +1,29 @@
+/* Container styles */
+.container {
+    width: 98%;
+    margin: 0 auto;
+    height: max-content; /* Consider reviewing if this is the best property for your layout */
+}
+
+/* Title styles */
+.title {
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+/* Main title styles */
+.main_title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 50px 0 10px;
+}
+
+/* Action button styles */
+.action {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--text);
+    height: max-content; /* Consider reviewing if this is the best property for your layout */
+    margin-top: 0;
+}
