@@ -1,0 +1,191 @@
+:root {
+    --text-color: var(--text);
+    --primary-color: rgb(2, 74, 148);
+}
+
+.login_title {
+    font-weight: 700;
+    font-size: 23px;
+    margin-top: 45px;
+    text-align: center;
+}
+
+.password_box {
+    width: 97%;
+    margin-top: 20px;
+    height: 165px;
+    background-color: white;
+    margin: 20px auto 0;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+.password_grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-flow: row;
+    grid-auto-rows: max-content;
+    height: max-content;
+    width: 92%;
+    margin: auto;
+}
+
+.password_text {
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    opacity: 0.7;
+    margin: 20px 0 2px;
+}
+
+.input_holder {
+    position: relative;
+}
+
+.eye {
+    background-image: url('https://i.imgur.com/BEgvbCs.png');
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    width: 25px;
+    height: 25px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto 0;
+}
+
+.eye_close {
+    background-image: url('https://i.imgur.com/8mF1wUG.png');
+}
+
+.password_input {
+    width: 100%;
+    height: 65px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid rgb(61, 61, 61);
+    padding: 15px;
+    font-size: 15px;
+}
+
+.password_input:focus {
+    border: 2px solid var(--text-color);
+    caret-color: var(--text-color);
+    display: block;
+}
+
+.forgot_password {
+    color: var(--text-color);
+    font-size: 15px;
+    margin: 17px 0 0 2px;
+    font-weight: 500;
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: 100%;
+    width: 95%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    grid-template-rows: max-content max-content;
+    position: absolute;
+    bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: auto;
+}
+
+.login {
+    color: white;
+    line-height: 60px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 22px;
+    width: 100%;
+    background-color: var(--primary-color);
+    height: 60px;
+    border-radius: 40px;
+    margin-bottom: 25px;
+}
+
+.data {
+    height: max-content;
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 80px 100px calc(100% - 180px);
+    grid-template-rows: max-content;
+}
+
+.logo_text {
+    margin: auto 10px;
+    height: max-content;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.welcome {
+    font-weight: 700;
+    font-size: 38px;
+    height: max-content;
+    margin: 25px 0;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('https://i.imgur.com/JLbwulF.png');
+    background-size: 105%;
+    background-position: center;
+}
+
+.login_text {
+    height: max-content;
+    opacity: 0.8;
+    font-size: 22px;
+    margin: auto;
+}
+
+.top_grid {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: 100%;
+    height: max-content;
+    width: 97%;
+    margin: auto;
+}
+
+.top_text {
+    display: grid;
+    grid-template-columns: 100%;
+    width: 97%;
+    height: max-content;
+    margin: auto;
+    grid-template-rows: max-content max-content;
+    margin-bottom: 5px;
+}
+
+.logo {
+    width: 55px;
+}
+
+.logo_other {
+    height: 38px;
+    margin: auto 0;
+}
+
+.version {
+    opacity: 0.5;
+    font-size: 11px;
+    height: max-content;
+    width: max-content;
+    margin: auto 0 auto auto;
+}
