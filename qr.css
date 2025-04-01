@@ -1,0 +1,158 @@
+:root {
+    --primary-color: white;
+    --secondary-color: black;
+    --error-bg-color: var(--text);
+    --margin-auto: auto;
+    --border-radius: 15px;
+    --transition-duration: 400ms;
+}
+
+body .bottom_bar {
+    z-index: 0;
+}
+
+.container {
+    width: 98%;
+    margin: var(--margin-auto);
+    height: max-content;
+}
+
+.main_title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.description {
+    font-weight: 400;
+}
+
+.action_grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content;
+    height: max-content;
+    width: 100%;
+}
+
+.action {
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+    width: 100%;
+    height: 90px;
+    display: grid;
+    margin-top: 0;
+    margin-bottom: 10px;
+    grid-template-columns: 15% 75% 10%;
+}
+
+.action_image {
+    width: 35px;
+    margin: var(--margin-auto);
+    margin-left: 20px;
+}
+
+.action_text {
+    display: grid;
+    grid-template-columns: 100%;
+    width: max-content;
+    height: max-content;
+    grid-template-rows: max-content;
+    margin: var(--margin-auto);
+}
+
+.action_title {
+    margin: var(--margin-auto);
+    height: max-content;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.action_subtitle {
+    margin: var(--margin-auto);
+    height: max-content;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.arrow {
+    width: 20px;
+    margin: var(--margin-auto);
+    margin-right: 15px !important;
+}
+
+.error {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    width: 0%;
+}
+
+.error_box {
+    width: 80%;
+    height: 230px;
+    border-radius: var(--border-radius);
+    background-color: var(--primary-color);
+    position: fixed;
+    top: -2000px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: var(--margin-auto);
+    transition: var(--transition-duration);
+}
+
+.error_title {
+    opacity: 0.9;
+    font-size: 25px;
+    margin: 30px 0 0 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.error_description {
+    margin: 10px 0 0 10px;
+    font-size: 15px;
+    width: 80%;
+    text-align: center;
+    margin: var(--margin-auto);
+}
+
+.error_button {
+    background-color: var(--error-bg-color);
+    width: 80%;
+    margin: var(--margin-auto);
+    line-height: 50px;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.opacity {
+    background-color: var(--secondary-color);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: var(--transition-duration);
+}
+
+.error_open {
+    width: 100%;
+}
+
+.error_open .opacity {
+    opacity: 0.7;
+}
+
+.error_open .error_box {
+    top: 0;
+}
