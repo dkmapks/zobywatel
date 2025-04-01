@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --main-color: rgb(41, 41, 41);
+    --error-color: rgb(206, 29, 29);
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.warning, .discord, .top_info, .guide_holder, .upload, .go {
+    width: 90%;
+    margin: 0 auto;
+    transition: 200ms;
+    box-shadow: 0px 0px 20px rgb(153, 153, 153);
+}
+
+/* Consolidated hover effects */
+.warning:hover, .discord:hover, .guide_holder:hover, .upload:hover, .go:hover {
+    opacity: 0.5;
+}
+
+/* Use shorthand properties */
+.discord {
+    cursor: pointer;
+    position: relative;
+    height: 50px;
+    background-color: #0d93ec;
+    border-radius: 10px;
+    margin-top: -5px;
+}
+
+.discord_text, .guide_title, .top_info, .selector_text, .option_box, .date_input, .upload_text {
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+/* Consistent naming for grids */
+.inner_grid, .date_grid, .upload_grid {
+    display: grid;
+    margin: auto;
+}
+
+/* Optimize animations */
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Example of media queries for responsiveness */
+@media (max-width: 768px) {
+    .discord, .guide_holder, .upload, .go {
+        width: 100%;
+    }
+}
