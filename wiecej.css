@@ -1,0 +1,23 @@
+/* Container styling */
+.container {
+    width: 98%;
+    margin: 0 auto;
+    height: max-content; /* Ensure this property is needed */
+}
+
+/* Title styling */
+.title, .main_title {
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.title {
+    font-weight: 600; /* Specific font-weight for .title */
+}
+
+/* Main title styling */
+.main_title {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
